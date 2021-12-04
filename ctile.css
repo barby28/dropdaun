@@ -1,0 +1,56 @@
+.nav{
+   background-color: orangered;
+}
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+li{
+    padding: 20px;
+    color: white;
+
+}
+ul li ul{
+    opacity: 0;
+    visibility: hidden;
+    justify-content: center;
+    position: absolute;
+    transition: all 0.5s ease;
+    display: none;
+   
+    
+}
+ul li:hover>ul,ul li ul:hover {
+opacity: 1;
+visibility: visible;
+display: block;
+background-color: orangered;
+
+
+}
+li:hover{
+    background-color: black;
+    color: white;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+body{
+    background: rgb(29, 29, 29);
+    font-family:sans-serif;
+
+}
+.and{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  
+    
+} 
+.one{
+   font-size: 60px; 
+}
